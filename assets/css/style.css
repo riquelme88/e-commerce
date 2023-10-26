@@ -1,0 +1,601 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin-left: 12vw;
+    margin-right: 12vw;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+header{
+    display: flex;
+    height: 110px;
+    align-items: center;
+    border-bottom: 2px solid hsl(220, 14%, 75%, 0.3);
+    justify-content: space-between;
+}
+
+.menu{
+    display: none;
+}
+.left-side{
+    display: flex;
+}
+
+.right-side{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+nav{
+    margin-left: 60px;
+}
+
+#close{
+    display: none;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a{
+    margin-right: 22px;
+    text-decoration: none;
+    color: hsl(219, 9%, 45%)
+}
+
+nav ul li a:hover{
+    color: hsl(220, 13%, 13%);
+    border-bottom: 4px solid hsl(26, 100%, 55%);
+    padding-bottom: 46px;
+}
+
+.cart {
+    margin-right: 30px;
+}
+.cart svg{
+    cursor: pointer;
+    fill: #69707D;
+}
+
+.cart svg:hover{
+    fill: black;
+}
+
+.cart-section   {
+    box-shadow: 0px 10px 30px -7px #aaa;
+    position: absolute;
+    width: 320px;
+    height: 200px;
+    margin-left: -140px;
+    margin-top: 30px;
+    background-color: white;
+    display: none;
+    border-radius: 10px;
+}
+
+#cart-tittle{
+    padding: 15px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid hsl(220, 14%, 75%, 0.3);
+    width: 99%;
+    margin-left: 1px;
+    font-weight: 700;
+}
+
+.carts-products{
+    padding: 10px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#empty{
+    margin-top: 40px;
+    color: hsl(219, 9%, 45%);
+}
+.avatar {
+    width: 59px;
+    height: 59px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.avatar:hover{
+    background-color: hsl(26, 100%, 55%);
+}
+
+.avatar img{
+    width: 55px;
+    height: auto;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-top: 4%;
+    
+}
+
+.active-image{
+    width: 21.4em;
+    border-radius: 10px;
+}
+
+.arrows{
+    display: none;
+}
+
+.thumbnail-imgs{
+    display: flex;
+    margin-top: 10px;
+}
+
+.thumbnail-imgs div{
+    width: 4.2em;
+    height: 4.4em;
+    margin-right: 1.5em;
+    cursor: pointer;
+}
+
+.thumbnail-imgs div img{
+    width: 4.1em;
+    height: 4.3em;
+    border-radius: 10px;
+}
+
+.active{
+    border: 2px solid hsl(26, 100%, 55%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active img{
+    opacity: 0.4;
+}
+
+.infos{
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+#sob-tittle{
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+h2{
+    font-size: 2.8em;
+    line-height: 45px;
+    margin-bottom: 30px;
+}
+
+#info-text{
+    font-size: 15px;
+    color: hsl(219, 9%, 45%);
+    max-width: 80%;
+}
+
+.price-div{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#price{
+    font-size: 21px;
+    font-weight: 700;
+}
+
+#offer{
+    margin-left: 10px;
+    background-color: hsl(25, 100%, 94%);
+    padding: 4px;
+    border-radius: 5px;
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+#price-offer{
+    margin-top: 5px;
+    color: hsl(220, 14%, 75%);
+    text-decoration: line-through;
+    font-size: 15px;
+}
+
+.buy{
+    display: flex;
+    margin-top: 35px;
+}
+
+.qntds{
+    display: flex;
+    margin-right: 15px;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+    background-color: hsl(223, 64%, 98%);
+    padding: 12px 5px;
+    border-radius: 5px;
+}
+
+.qntds div{
+    cursor: pointer;
+}
+
+#num{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+button{
+    padding: 10px;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(26, 100%, 55%);
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.7;
+    box-shadow: 0px 7px 25px -5px  hsl(26, 100%, 55%);
+}
+button svg{
+    margin-right: 10px;
+    fill: white;
+}
+
+@media screen and (min-width: 1920px) {
+    nav ul li a{
+        margin-right: 32px;
+        font-size: 19px;
+    }
+    .active-image{
+        width: 31em;
+        border-radius: 10px;
+    }
+
+    .thumbnail-imgs div{
+        width: 5.8em;
+        height: 5.7em;
+        margin-right: 2.5em;
+    }
+
+    .thumbnail-imgs div img{
+        width: 5.7em;
+        height: 5.6em;
+    }
+
+    .infos{
+        margin-top: 60px;
+        margin-left: 150px;
+    }
+
+    #sob-tittle{
+        font-size: 14px;
+    }
+
+    h2{
+        font-size: 3.8em;
+        line-height: 65px;
+    }
+
+    #info-text{
+        font-size: 18px;
+        max-width: 70%;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+
+    #price{
+        font-size: 26px;
+    }
+
+    button{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 973px) and (max-width:1024px){
+    
+    main{
+        margin-left: 35px;
+    }
+    
+    .infos{
+        margin-left: 20px;
+    }
+    
+    h2{
+        font-size: 2.2em;
+        margin-bottom: 10px;
+    }
+
+    #info-text{
+        font-size: 13px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width:768px)  and (max-width : 972px) {
+    body{
+        margin-left: 6vw;
+        margin-right: 6vw;
+    }
+ 
+    nav{
+        margin-left: 40px;
+    }
+    
+    nav ul li a{
+        margin-right: 12px;
+        font-size: 13px;
+    }
+
+    .active-image{
+        width: 18.5em;
+        border-radius: 10px;
+    }
+
+    .thumbnail-imgs div{
+        width: 3.5em;
+        height: 3.5em;
+        margin-right: 1.5em;
+    }
+
+    .thumbnail-imgs div img{
+        width: 3.4em;
+        height: 3.4em;
+    }
+    
+    main{
+        margin-left: 30px;
+    }
+    
+    .infos{
+        margin-left: 20px;
+    }
+    
+    h2{
+        font-size: 2em;
+        margin-bottom: 10px;
+        line-height: 35px;
+    }
+
+    #info-text{
+        font-size: 13px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    body{
+        margin-left: 0vw;
+        margin-right: 0vw;
+    }
+
+    header{
+        border: 0px;
+        height: 70px;
+        margin-right: 10vw;
+    }
+
+    .menu{
+        display: block;
+        margin-left: 20px;
+        width: 25px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    .logo{
+        margin-left: 20px;
+    }
+
+    .logo img{
+        width: 120px;
+    }
+
+    nav{
+        position: absolute;
+        z-index: 99;
+        margin-left: 0px;
+        transition: all ease 0.5s;
+        width: 70vw;
+        margin-top: -3vh;
+        margin-left: -100vw;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-color: white;
+        padding: 20px;
+    }
+    nav ul li{
+        margin-top: 25px;
+    }
+
+    nav ul li a{
+        color: hsl(220, 13%, 13%);
+        font-weight: 700;
+    }
+
+    #close{
+        position: absolute;
+        margin-top: 0px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+    .right-side{
+        margin-left: 28vw;
+    }
+
+    .cart img{
+        width: 25px;
+    }
+
+    .cart-section{
+        display: none;
+        margin-left: -290px;
+        width: 400px;
+        height: 300px;
+    }
+
+    #empty{
+        margin-top: 80px;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .avatar{
+        width: 28px;
+        height: 28px;
+    }
+
+    .avatar img{
+        width: 24px;
+    }
+
+    main{
+        margin-top: 0px;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    .active-image{
+        width: 100vw;
+        border-radius: 0px;
+        height: calc(48vh - 60px);
+    }
+
+    .thumbnail-imgs{
+        display: none;
+    }
+
+    .infos{
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    #sob-tittle{
+        font-size: 15px;
+    }
+
+    h2{
+        font-size: 32px;
+        margin-bottom: 10px;
+        line-height: 33px;
+    }
+
+    #info-text{
+        font-size: 16px;
+        max-width: 91%;
+        line-height: 22px;
+    }
+
+    .price-div{
+        display: flex;
+        margin-top: 15px;
+    }
+
+    #price{
+        font-size: 28px;
+    }
+
+    #offer{
+        font-size: 16px;
+    }
+
+    #price-offer{
+        margin-left: 140px;
+    }
+
+    .price-sec{
+        display: flex;
+        align-items: center;
+    }
+
+    .buy{
+        flex-direction: column;
+        margin-top: 13px;
+    }
+
+    .qntds{
+        width: 90%;
+        padding: 15px 0px;
+        margin-bottom: 12px;
+    }
+
+    #num{
+        font-size: 20px;
+    }
+
+    #minus,#plus{
+        width: 15px;
+    }
+
+    button{
+        width: 90%;
+        padding: 20px;
+    }
+
+    .back{
+        width: 100vw;
+        position: absolute;
+        height: 100vh;
+        background-color: hsl(220, 13%, 13%);
+        opacity: 0.2;
+        display: none;
+    }
+
+    .arrows{
+        position: absolute;
+        margin-top: -23vh;
+        display: flex;
+        width: 100vw;
+        justify-content: space-between;
+    }
+
+    #left,#right{
+        background-color: white;
+        padding: 15px;
+        border-radius: 100%;
+        width: 44px;
+        cursor: pointer;
+    }
+
+    #left{
+        margin-left: 20px;
+    }
+
+    #right{
+        margin-right: 20px;
+    }
+}

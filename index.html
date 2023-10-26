@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo.svg"/>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>E-commerce</title>
+</head>
+<body>
+    <div class="back"></div>
+    <header>
+        <div class="left-side">
+            <img src="/assets/images/icon-menu.svg" alt="" class="menu">
+            <div class="logo">
+                <img src="/assets/images/logo.svg" alt="">
+            </div>
+            <nav>
+                <img id="close" src="/assets/images/icon-close.svg" alt="">
+                <ul>
+                    <li><a href="">Collections</a></li>
+                    <li><a href="">Men</a></li>
+                    <li><a href="">Women</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right-side">
+            <div class="cart">
+                <svg id="cart-header" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"></path>
+                </svg>
+                <div class="cart-section">
+                    <p id="cart-tittle">Cart</p>
+                    <div class="carts-products">
+                        <p id="empty">Your cart is empty</p>
+                    </div>
+                </div>
+            </div>
+            <div class="avatar">
+                <img src="/assets/images/image-avatar.png" alt="">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="images">
+            <img class="active-image" src="/assets/images/image-product-1.jpg" alt="">
+            <div class="arrows">
+                <img id="left" src="/assets/images/icon-previous.svg" alt="">
+                <img id="right" src="/assets/images/icon-next.svg" alt="">
+            </div>
+            <div class="thumbnail-imgs">
+                <div class="active">
+                    <img src="/assets/images/image-product-1-thumbnail.jpg" alt="">
+                </div>
+                <div>
+                    <img src="/assets/images/image-product-2-thumbnail.jpg" alt="">
+                </div>
+                <div >
+                    <img src="/assets/images/image-product-3-thumbnail.jpg" alt="">
+                </div>
+                <div>
+                    <img src="/assets/images/image-product-4-thumbnail.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="infos">
+            <p id="sob-tittle">Sneaker Company</p>
+            <h2>Fall Limited Edition Sneakers</h2>
+            <p id="info-text">
+                These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber
+                outer sole, they'll withstand everything the wheather can offer.
+            </p>
+            <div class="price-sec">
+                <div class="price-div">
+                    <p id="price">$125.00</p>
+                    <p id="offer">50%</p>
+                </div>
+                <p id="price-offer">$250.00</p>
+            </div>
+            <div class="buy">
+                <div class="qntds">
+                    <div id="minus"><img id="minus" src="/assets/images/icon-minus.svg" alt=""></div>
+                    <p id="num">0</p>
+                    <div id="plus"><img id="plus" src="/assets/images/icon-plus.svg" alt=""></div>
+                </div>
+                <button><svg width="22" height="20" viewBox="0 0 24 24"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"></path></svg>Add to cart</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
