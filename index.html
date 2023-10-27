@@ -37,6 +37,17 @@
                 <div class="cart-section">
                     <p id="cart-tittle">Cart</p>
                     <div class="carts-products">
+                        <div class="products">
+                            <div class="product">
+                                <img src="" alt="">
+                                <div class="info-product">
+                                    <p id="name"></p>
+                                    <p id="price-cart">$ <span>$</span></p>
+                                </div>
+                                <svg width="14" height="16"><path d='M0 2.625V1.75C0 1.334.334 1 .75 1h3.5l.294-.584A.741.741 0 0 1 5.213 0h3.571a.75.75 0 0 1 .672.416L9.75 1h3.5c.416 0 .75.334.75.75v.875a.376.376 0 0 1-.375.375H.375A.376.376 0 0 1 0 2.625Zm13 1.75V14.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 1 14.5V4.375C1 4.169 1.169 4 1.375 4h11.25c.206 0 .375.169.375.375ZM4.5 6.5c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7Zm3 0c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7Zm3 0c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7Z'></path></svg>
+                            </div>
+                            <button>Checkout</button>
+                        </div>
                         <p id="empty">Your cart is empty</p>
                     </div>
                 </div>
@@ -54,20 +65,28 @@
                 <img id="right" src="/assets/images/icon-next.svg" alt="">
             </div>
             <div class="thumbnail-imgs">
-                <div class="active">
-                    <img src="/assets/images/image-product-1-thumbnail.jpg" alt="">
-                </div>
-                <div>
+                    <img class="active" src="/assets/images/image-product-1-thumbnail.jpg" alt="">
                     <img src="/assets/images/image-product-2-thumbnail.jpg" alt="">
-                </div>
-                <div >
                     <img src="/assets/images/image-product-3-thumbnail.jpg" alt="">
-                </div>
-                <div>
                     <img src="/assets/images/image-product-4-thumbnail.jpg" alt="">
-                </div>
             </div>
         </div>
+
+        <div class="images-layout">
+            <svg width="22" height="20" viewBox="0 0 24 24"><path d ='m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z'></path></svg>
+            <img class="active-image-layout" src="/assets/images/image-product-1.jpg" alt="">
+            <div class="arrows">
+                <img id="left" src="/assets/images/icon-previous.svg" alt="">
+                <img id="right" src="/assets/images/icon-next.svg" alt="">
+            </div>
+            <div class="thumbnail-imgs-layout">
+                    <img class="active" src="/assets/images/image-product-1-thumbnail.jpg" alt="">
+                    <img src="/assets/images/image-product-2-thumbnail.jpg" alt="">
+                    <img src="/assets/images/image-product-3-thumbnail.jpg" alt="">
+                    <img src="/assets/images/image-product-4-thumbnail.jpg" alt="">
+            </div>
+        </div>
+
         <div class="infos">
             <p id="sob-tittle">Sneaker Company</p>
             <h2>Fall Limited Edition Sneakers</h2>
@@ -92,5 +111,7 @@
             </div>
         </div>
     </main>
+    <script src="/assets/js/classes.js"></script>
+    <script src="/assets/js/script.js"></script>
 </body>
 </html>

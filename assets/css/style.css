@@ -67,12 +67,12 @@ nav ul li a:hover{
     fill: black;
 }
 
-.cart-section   {
+.cart-section {
     box-shadow: 0px 10px 30px -7px #aaa;
     position: absolute;
     width: 320px;
     height: 200px;
-    margin-left: -140px;
+    margin-left: -155px;
     margin-top: 30px;
     background-color: white;
     display: none;
@@ -100,6 +100,57 @@ nav ul li a:hover{
 #empty{
     margin-top: 40px;
     color: hsl(219, 9%, 45%);
+    
+}
+
+.products{
+    width: 100%;
+    display: none;
+}
+
+.product{
+    display: flex;
+    margin-top: 5%;
+}
+
+.product img{
+    width: 2.4em;
+    margin-left: 5%;
+    border-radius: 4px;
+    height: 2.6em;
+
+}
+
+.info-product{
+    font-size: 14px;
+    margin-left: 5%;
+}
+
+#name{
+    font-size: 13px;
+    color: hsl(219, 9%, 45%);
+}
+
+#price-cart{
+    color:  hsl(219, 9%, 45%)
+}
+
+#price-cart span{
+    color: black;
+    font-weight: 700;
+}
+
+.product svg{
+    margin-left: 13px;
+    margin-top: 10px;
+}
+
+.products button{
+    width: 90%;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 7px;
+    margin-left: 5%;
 }
 .avatar {
     width: 59px;
@@ -131,6 +182,7 @@ main{
 .active-image{
     width: 21.4em;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .arrows{
@@ -142,17 +194,16 @@ main{
     margin-top: 10px;
 }
 
-.thumbnail-imgs div{
-    width: 4.2em;
-    height: 4.4em;
+.thumbnail-imgs img{
+    width: 4.1em;
+    height: 4.3em;
+    border-radius: 10px;
     margin-right: 1.5em;
     cursor: pointer;
 }
 
-.thumbnail-imgs div img{
-    width: 4.1em;
-    height: 4.3em;
-    border-radius: 10px;
+.thumbnail-imgs img:hover{
+    opacity: 0.8;
 }
 
 .active{
@@ -161,11 +212,78 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0.6;
 }
 
-.active img{
-    opacity: 0.4;
+.active:hover{
+    opacity: 0.6 !important;
 }
+
+.images-layout{
+    display: non;
+    position: absolute;
+    margin-left: 300px;
+    z-index: 99;
+    margin-top: -32px;
+    display: none;
+}
+
+.images-layout .arrows{
+    display: flex;
+    position: absolute;
+    margin-top: -200px;
+    width: 110%;
+    justify-content: space-between;
+    margin-left: -20px;
+}
+
+.images-layout svg{
+    position: absolute;
+    margin-left: 95%;
+    margin-top: -5%;
+    fill: white;
+    cursor: pointer;
+}
+
+#left,#right{
+    background-color: white;
+    padding: 10px;
+    border-radius: 100%;
+    width: 32px;
+    cursor: pointer;
+}
+
+.active-image-layout{
+    width: 24.6em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.thumbnail-imgs-layout{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.thumbnail-imgs-layout img{
+    width: 4.1em;
+    height: 4.3em;
+    border-radius: 10px;
+    margin-right: 1.5em;
+    cursor: pointer;
+}
+
+.back{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #69707D;
+    margin-left: -12vw;
+    opacity: 0.6;
+    z-index: 98;
+    display: none;
+}
+
 
 .infos{
     margin-left: 100px;
@@ -202,6 +320,10 @@ h2{
 #price{
     font-size: 21px;
     font-weight: 700;
+}
+
+.show{
+    display: block;
 }
 
 #offer{
@@ -279,15 +401,10 @@ button svg{
         border-radius: 10px;
     }
 
-    .thumbnail-imgs div{
-        width: 5.8em;
-        height: 5.7em;
-        margin-right: 2.5em;
-    }
-
-    .thumbnail-imgs div img{
+    .thumbnail-imgs img{
         width: 5.7em;
         height: 5.6em;
+        margin-right: 2.5em;
     }
 
     .infos{
@@ -361,15 +478,10 @@ button svg{
         border-radius: 10px;
     }
 
-    .thumbnail-imgs div{
-        width: 3.5em;
-        height: 3.5em;
-        margin-right: 1.5em;
-    }
-
-    .thumbnail-imgs div img{
+    .thumbnail-imgs  img{
         width: 3.4em;
         height: 3.4em;
+        margin-right: 1.5em;
     }
     
     main{
@@ -438,34 +550,32 @@ button svg{
         padding: 20px;
     }
     nav ul li{
-        margin-top: 25px;
+        margin-top: 35px;
     }
 
     nav ul li a{
         color: hsl(220, 13%, 13%);
         font-weight: 700;
+        font-size: 18px;
     }
 
     #close{
         position: absolute;
-        margin-top: 0px;
+        margin-top: 15px;
         margin-left: 20px;
         cursor: pointer;
+        display: block;
     }
 
     .right-side{
         margin-left: 28vw;
     }
-
-    .cart img{
-        width: 25px;
-    }
-
     .cart-section{
-        display: none;
+        display: nne;
         margin-left: -290px;
         width: 400px;
         height: 300px;
+        z-index: 99;
     }
 
     #empty{
